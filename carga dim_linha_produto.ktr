@@ -493,12 +493,12 @@
   <order>
     <hop>
       <from>LE CSV</from>
-      <to>Select values</to>
+      <to>SELECIONA CAMPOS</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Select values</from>
-      <to>Insert / update</to>
+      <from>SELECIONA CAMPOS</from>
+      <to>GRAVA NO BANCO</to>
       <enabled>Y</enabled>
     </hop>
   </order>
@@ -654,7 +654,7 @@
     </GUI>
   </step>
   <step>
-    <name>Select values</name>
+    <name>SELECIONA CAMPOS</name>
     <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
@@ -703,7 +703,7 @@
     </GUI>
   </step>
   <step>
-    <name>Insert / update</name>
+    <name>GRAVA NO BANCO</name>
     <type>InsertUpdate</type>
     <description/>
     <distribute>Y</distribute>

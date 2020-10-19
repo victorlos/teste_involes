@@ -493,17 +493,17 @@
   <order>
     <hop>
       <from>LE CSV</from>
-      <to>Select values</to>
+      <to>SELECIONA CAMPOS</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Select values</from>
-      <to>Calculator</to>
+      <from>SELECIONA CAMPOS</from>
+      <to>EXTRAÇÃO MES, ANO</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Calculator</from>
-      <to>Insert / update</to>
+      <from>EXTRAÇÃO MES, ANO</from>
+      <to>GRAVA NO BANCO</to>
       <enabled>Y</enabled>
     </hop>
   </order>
@@ -659,7 +659,7 @@
     </GUI>
   </step>
   <step>
-    <name>Select values</name>
+    <name>SELECIONA CAMPOS</name>
     <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
@@ -714,7 +714,7 @@
     </GUI>
   </step>
   <step>
-    <name>Calculator</name>
+    <name>EXTRAÇÃO MES, ANO</name>
     <type>Calculator</type>
     <description/>
     <distribute>Y</distribute>
@@ -770,7 +770,7 @@
     </GUI>
   </step>
   <step>
-    <name>Insert / update</name>
+    <name>GRAVA NO BANCO</name>
     <type>InsertUpdate</type>
     <description/>
     <distribute>Y</distribute>

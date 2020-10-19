@@ -493,17 +493,17 @@
   <order>
     <hop>
       <from>LE CSV</from>
-      <to>Select values</to>
+      <to>SELECIONA VALORES</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Select values</from>
-      <to>Filter rows</to>
+      <from>SELECIONA VALORES</from>
+      <to>FILTRA LINHAS</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Filter rows</from>
-      <to>Insert / update</to>
+      <from>FILTRA LINHAS</from>
+      <to>GRAVA NO BANCO</to>
       <enabled>Y</enabled>
     </hop>
   </order>
@@ -659,7 +659,7 @@
     </GUI>
   </step>
   <step>
-    <name>Select values</name>
+    <name>SELECIONA VALORES</name>
     <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
@@ -702,7 +702,7 @@
     </GUI>
   </step>
   <step>
-    <name>Filter rows</name>
+    <name>FILTRA LINHAS</name>
     <type>FilterRows</type>
     <description/>
     <distribute>Y</distribute>
@@ -712,7 +712,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <send_true_to>Insert / update</send_true_to>
+    <send_true_to>GRAVA NO BANCO</send_true_to>
     <send_false_to/>
     <compare>
       <condition>
@@ -746,7 +746,7 @@
     </GUI>
   </step>
   <step>
-    <name>Insert / update</name>
+    <name>GRAVA NO BANCO</name>
     <type>InsertUpdate</type>
     <description/>
     <distribute>Y</distribute>

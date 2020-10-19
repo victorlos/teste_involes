@@ -493,32 +493,32 @@
   <order>
     <hop>
       <from>LE CSV</from>
-      <to>Select values</to>
+      <to>SELECIONA CAMPOS</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Select values</from>
-      <to>Filter rows</to>
+      <from>SELECIONA CAMPOS</from>
+      <to>FILTRA LINHAS</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Filter rows</from>
-      <to>Value mapper</to>
+      <from>FILTRA LINHAS</from>
+      <to>MAPEIA A PRESENCA</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Value mapper</from>
-      <to>Sort rows</to>
+      <from>MAPEIA A PRESENCA</from>
+      <to>ORDENA POR PDV,DATA</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Sort rows</from>
-      <to>Group by</to>
+      <from>ORDENA POR PDV,DATA</from>
+      <to>AGRUPA</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Group by</from>
-      <to>Insert / update</to>
+      <from>AGRUPA</from>
+      <to>GRAVA NO BANCO</to>
       <enabled>Y</enabled>
     </hop>
   </order>
@@ -674,7 +674,7 @@
     </GUI>
   </step>
   <step>
-    <name>Select values</name>
+    <name>SELECIONA CAMPOS</name>
     <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
@@ -723,7 +723,7 @@
     </GUI>
   </step>
   <step>
-    <name>Filter rows</name>
+    <name>FILTRA LINHAS</name>
     <type>FilterRows</type>
     <description/>
     <distribute>Y</distribute>
@@ -733,7 +733,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <send_true_to>Value mapper</send_true_to>
+    <send_true_to>MAPEIA A PRESENCA</send_true_to>
     <send_false_to/>
     <compare>
       <condition>
@@ -767,7 +767,7 @@
     </GUI>
   </step>
   <step>
-    <name>Value mapper</name>
+    <name>MAPEIA A PRESENCA</name>
     <type>ValueMapper</type>
     <description/>
     <distribute>Y</distribute>
@@ -801,7 +801,7 @@
     </GUI>
   </step>
   <step>
-    <name>Group by</name>
+    <name>AGRUPA</name>
     <type>GroupBy</type>
     <description/>
     <distribute>Y</distribute>
@@ -844,13 +844,13 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>736</xloc>
+      <xloc>752</xloc>
       <yloc>80</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>Sort rows</name>
+    <name>ORDENA POR PDV,DATA</name>
     <type>SortRows</type>
     <description/>
     <distribute>Y</distribute>
@@ -900,7 +900,7 @@
     </GUI>
   </step>
   <step>
-    <name>Insert / update</name>
+    <name>GRAVA NO BANCO</name>
     <type>InsertUpdate</type>
     <description/>
     <distribute>Y</distribute>
@@ -953,7 +953,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>848</xloc>
+      <xloc>864</xloc>
       <yloc>80</yloc>
       <draw>Y</draw>
     </GUI>
